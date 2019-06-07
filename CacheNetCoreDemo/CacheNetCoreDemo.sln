@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheNetCoreDemo", "Library.API\CacheNetCoreDemo.csproj", "{53B45FBB-8DF4-43AB-B3D3-437DC902838B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53B45FBB-8DF4-43AB-B3D3-437DC902838B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B45FBB-8DF4-43AB-B3D3-437DC902838B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B45FBB-8DF4-43AB-B3D3-437DC902838B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B45FBB-8DF4-43AB-B3D3-437DC902838B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {560CB09B-AA4A-4F23-8B2C-84317159F6D0}
+	EndGlobalSection
+EndGlobal
