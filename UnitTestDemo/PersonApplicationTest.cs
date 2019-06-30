@@ -3,6 +3,7 @@ using Xunit;
 
 namespace UnitTestDemo
 {
+    using System.Collections;
     using System.Collections.Generic;
     using ApplicationLayer;
     using Moq;
@@ -51,6 +52,42 @@ namespace UnitTestDemo
             var result = personApplication.PersonNames();
 
             Assert.NotNull(result);
+        }
+
+        [Fact]
+        public void Person_ConcatenateTwoNames_Success1() {
+            var person = "";
+            var firstPerson = "";
+            var secondPerson = "";
+            var expectedResult = "walberth,angela";
+
+            var mockRepository = new Mock<IPersonRepository>();
+            mockRepository.SetupSequence(x => x.GetPersonCompleteName(person))
+                          .Returns("walberth")
+                          .Returns("angela");
+            
+            var personApplication = new PersonApplication(mockRepository.Object);
+            var result = personApplication.ConcatenateTwoNames(firstPerson, secondPerson);
+
+            Assert.True(result == expectedResult);
+        }
+
+        [Fact]
+        public void Person_ConcatenateTwoNames_Success2() {
+            var person = "";
+            var firstPerson = "";
+            var secondPerson = "";
+            var expectedResult = "walberth,angela";
+
+            
+            var mockRepository = new Mock<IPersonRepository>();
+            mockRepository.Setup(x => x.GetPersonCompleteName(person))
+                          .Returns(new Queue<string>(new [] {"walberth", "angela"}).Dequeue);
+            
+            var personApplication = new PersonApplication(mockRepository.Object);
+            var result = personApplication.ConcatenateTwoNames(firstPerson, secondPerson);
+
+            Assert.True(result == expectedResult);
         }
     }
 }

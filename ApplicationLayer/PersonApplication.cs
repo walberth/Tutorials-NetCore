@@ -28,5 +28,12 @@ namespace ApplicationLayer
         public IEnumerable<string> PersonNames() {
             return _personRepository.PersonNames();
         }
+
+        public string ConcatenateTwoNames(string firsPerson, string secondPerson) {
+            var firstCompleteName = _personRepository.GetPersonCompleteName(firsPerson);
+            var secondCompleteName = _personRepository.GetPersonCompleteName(secondPerson);
+
+            return $"{firstCompleteName},{secondCompleteName}";
+        }
     }
 }

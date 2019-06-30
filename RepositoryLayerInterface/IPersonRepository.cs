@@ -7,5 +7,6 @@ namespace RepositoryLayerInterface
 
     public interface IPersonRepository {
         IEnumerable<string> PersonNames();
+        string GetPersonCompleteName(string name);
     }
 }

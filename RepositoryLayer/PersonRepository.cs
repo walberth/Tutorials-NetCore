@@ -17,5 +17,9 @@ namespace RepositoryLayer
 
             return nombres;
         }
+
+        public string GetPersonCompleteName(string name) {
+            return "Walberth Gutierrez Telles";
+        }
     }
 }
