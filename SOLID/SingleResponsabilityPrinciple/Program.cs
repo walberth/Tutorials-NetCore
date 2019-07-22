@@ -1,10 +1,10 @@
 ﻿namespace SingleResponsabilityPrinciple {
-    using Newtonsoft.Json;
     using System;
     using System.IO;
-    using Microsoft.Extensions.Configuration;
-    using Newtonsoft.Json.Converters;
+    using Newtonsoft.Json;
     using static System.Console;
+    using Newtonsoft.Json.Converters;
+    using Microsoft.Extensions.Configuration;
 
     class Program {
         private static IConfigurationRoot configuration;
@@ -31,6 +31,7 @@
 
     public class RatingEngine {
         private IConfigurationRoot configuration;
+
         public RatingEngine (IConfigurationRoot configuration) {
             this.configuration = configuration;
         }
@@ -38,11 +39,9 @@
         public PolicyReturned Rate() {
             var response = new PolicyReturned();
             
-            WriteLine($"Start consuming the method: {DateTime.Now}");
+            SaveLog($"Start consuming the method: {DateTime.Now}");
 
-            var policyJson = File.ReadAllText("file/policy.json");
-
-            var policy = JsonConvert.DeserializeObject<Policy>(policyJson, new StringEnumConverter());
+            var policy = ReadObject<Policy>(configuration["policyFile"]);
 
             if (policy == null) {
                 response.Message = "The archive is empty or dosen't have correct values";
@@ -84,35 +83,7 @@
 
                     break;
                 case PolicyType.Life:
-                    if (policy.DateOfBirth == DateTime.MinValue) {
-                        response.Message = "Life policy must include Date of Birth.";
-                        return response;
-                    }
-
-                    if (policy.DateOfBirth < DateTime.Today.AddYears(-100)) {
-                        response.Message = "Centenarians are not eligible for coverage.";
-                        return response;
-                    }
-
-                    if (policy.Amount == 0) {
-                        response.Message = "Life policy must include an Amount.";
-                        return response;
-                    }
-
-                    var age = DateTime.Today.Year - policy.DateOfBirth.Year;
-
-                    if (policy.DateOfBirth.Month == DateTime.Today.Month && DateTime.Today.Day < policy.DateOfBirth.Day || DateTime.Today.Month < policy.DateOfBirth.Month) {
-                        age--;
-                    }
-
-                    var baseRate = policy.Amount * age / 200;
-
-                    if (policy.IsSmoker) {
-                        response.Rating = baseRate * 2;
-                        break;
-                    }
-
-                    response.Rating = baseRate;
+                    response = PoliciyLife(policy);
 
                     break;
                 default:
@@ -120,13 +91,62 @@
                     break;
             }
 
-            using(var writetext = new StreamWriter("persistence/persistence.json")) {
-                writetext.WriteLine(JsonConvert.SerializeObject(response));
-            }
+            PersistenceData(response, configuration["persitenceFile"]);
 
-            WriteLine($"Rating completed: {DateTime.Now}");
+            SaveLog($"Rating completed: {DateTime.Now}");
 
             return response;
+        }
+
+        private void SaveLog(string message) {
+            WriteLine(message);
+        }
+
+        private T ReadObject<T>(string filePath) {
+            var information = File.ReadAllText(filePath);
+            return JsonConvert.DeserializeObject<T>(information, new StringEnumConverter());
+        }
+
+        private PolicyReturned PoliciyLife(Policy policy) {
+            var response = new PolicyReturned();
+
+            if (policy.DateOfBirth == DateTime.MinValue) {
+                response.Message = "Life policy must include Date of Birth.";
+                return response;
+            }
+
+            if (policy.DateOfBirth < DateTime.Today.AddYears(-100)) {
+                response.Message = "Centenarians are not eligible for coverage.";
+                return response;
+            }
+
+            if (policy.Amount == 0) {
+                response.Message = "Life policy must include an Amount.";
+                return response;
+            }
+
+            var age = DateTime.Today.Year - policy.DateOfBirth.Year;
+
+            if (policy.DateOfBirth.Month == DateTime.Today.Month && DateTime.Today.Day < policy.DateOfBirth.Day || DateTime.Today.Month < policy.DateOfBirth.Month) {
+                age--;
+            }
+
+            var baseRate = policy.Amount * age / 200;
+
+            if (policy.IsSmoker) {
+                response.Rating = baseRate * 2;
+                return response;
+            }
+
+            response.Rating = baseRate;
+
+            return response;
+        }
+
+        private void PersistenceData<T>(T data, string filePath) {
+            using(var writetext = new StreamWriter(filePath)) {
+                writetext.WriteLine(JsonConvert.SerializeObject(data));
+            }
         }
     }
 
