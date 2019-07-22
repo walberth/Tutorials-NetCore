@@ -2,13 +2,22 @@
     using Newtonsoft.Json;
     using System;
     using System.IO;
+    using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json.Converters;
     using static System.Console;
 
     class Program {
+        private static IConfigurationRoot configuration;
+
         static void Main(string[] args) {
+            var builder = new ConfigurationBuilder()
+                          .SetBasePath(Directory.GetCurrentDirectory())
+                          .AddJsonFile("appsettings.json");
+
+            configuration = builder?.Build();
+
             try {
-                var rating = new RatingEngine();
+                var rating = new RatingEngine(configuration);
                 var rate = rating.Rate();
 
                 WriteLine($"{rate.Rating} - {rate.Message}");
@@ -21,9 +30,14 @@
     }
 
     public class RatingEngine {
+        private IConfigurationRoot configuration;
+        public RatingEngine (IConfigurationRoot configuration) {
+            this.configuration = configuration;
+        }
+
         public PolicyReturned Rate() {
             var response = new PolicyReturned();
-
+            
             WriteLine($"Start consuming the method: {DateTime.Now}");
 
             var policyJson = File.ReadAllText("file/policy.json");
@@ -158,6 +172,4 @@
         Land = 1,
         Auto = 2
     }
-
-    
 }
