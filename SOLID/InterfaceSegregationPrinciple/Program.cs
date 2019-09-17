@@ -16,6 +16,13 @@ namespace InterfaceSegregationPrinciple
         public void Print(Document document) { throw new NotImplementedException(); }
     }
 
+    public class OnlyPrinter : IMachine
+    {
+        public void Print(Document document) { throw new NotImplementedException(); }
+        public void Scan(Document document) { throw new NotImplementedException(); }
+        public void Fax(Document document) { throw new NotImplementedException(); }
+    }
+
     public class MultiFunction : IMultiFunction {
         private IScan scan;
         private IPrint print;
