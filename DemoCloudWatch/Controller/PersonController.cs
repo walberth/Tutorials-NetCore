@@ -14,13 +14,13 @@
         }
 
         [HttpGet]
-        public ActionResult GetAllPerson() {
+        public ActionResult Get() {
             return Ok(_personApplication.GetAllPerson());
         }
 
         [HttpPost]
-        public ActionResult RegisterPerson([FromBody] string value) {
-            return Ok(_personApplication.RegisterPerson(value));
+        public ActionResult RegisterPerson() {
+            return Ok(_personApplication.RegisterPerson(""));
         }
     }
 }
