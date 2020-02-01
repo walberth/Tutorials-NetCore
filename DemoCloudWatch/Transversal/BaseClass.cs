@@ -5,11 +5,9 @@
 
     public class BaseClass {
         private static Logger _logger;
-        private static LogEventInfo _logEventInfo;
 
         public BaseClass() {
             _logger = LogManager.GetCurrentClassLogger();
-            _logEventInfo = new LogEventInfo(LogLevel.Error, "", "customs values");
         }
 
         public void RegisterLogFatal(Exception ex, Guid identifier) {

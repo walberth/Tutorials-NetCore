@@ -44,10 +44,7 @@
 
             config.AddTarget("AWSTarget", awsTarget);
 
-            config.AddRuleForOneLevel(LogLevel.Error, awsTarget);
-            config.AddRuleForOneLevel(LogLevel.Fatal, awsTarget);
-            config.AddRuleForOneLevel(LogLevel.Warn, awsTarget);
-            config.AddRuleForOneLevel(LogLevel.Info, awsTarget);
+            config.AddRuleForAllLevels(awsTarget);
 
             InternalLogger.LogFile = Configuration["Logging:InternalLog"];
             LogManager.Configuration = config;
