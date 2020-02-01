@@ -3,7 +3,6 @@
     using Business;
     using NLog.Common;
     using NLog.Config;
-    using NLog.Targets;
     using NLog.AWS.Logger;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Builder;
@@ -42,16 +41,13 @@
                                             Configuration["InformationAWS:AccessKey"],
                                             Configuration["InformationAWS:SecretKey"]);
 
-            var fileTarget = CreateFileTarget(Configuration["Logging:File:Path"], Configuration["Logging:File:Layout"]);
 
             config.AddTarget("AWSTarget", awsTarget);
-            config.AddTarget(fileTarget);
 
             config.AddRuleForOneLevel(LogLevel.Error, awsTarget);
             config.AddRuleForOneLevel(LogLevel.Fatal, awsTarget);
             config.AddRuleForOneLevel(LogLevel.Warn, awsTarget);
             config.AddRuleForOneLevel(LogLevel.Info, awsTarget);
-            config.AddRuleForOneLevel(LogLevel.Trace, fileTarget);
 
             InternalLogger.LogFile = Configuration["Logging:InternalLog"];
             LogManager.Configuration = config;
@@ -78,18 +74,11 @@
                                  ", ApplicationName=" + "Test" +
                              " }";
 
-            target.LogStreamNameSuffix = "hola";
-            target.LogStreamNamePrefix = "again";
+            target.LogStreamNameSuffix = "Demo";
+            target.LogStreamNamePrefix = "Logger";
             target.Layout = format;
 
             return target;
-        }
-
-        private static FileTarget CreateFileTarget(string path, string layout) {
-            return new FileTarget("FileTarget") {
-                FileName = path,
-                Layout = layout
-            };
         }
     }
 }
