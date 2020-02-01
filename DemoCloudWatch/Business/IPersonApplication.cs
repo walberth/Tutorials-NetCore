@@ -1,9 +1,10 @@
 ﻿namespace DemoCloudWatch.Business
 {
+    using Transversal;
     using System.Collections.Generic;
 
     public interface IPersonApplication {
-        IEnumerable<string> GetAllPerson();
-        object RegisterPerson(string value);
+        Response<IEnumerable<string>> GetAllPerson();
+        Response<object> RegisterPerson(string value);
     }
 }

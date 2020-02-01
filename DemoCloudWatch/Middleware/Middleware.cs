@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Session;
-using Microsoft.Extensions.Primitives;
 
-namespace DemoCloudWatch
+namespace DemoCloudWatch.Middleware
 {
     public class Middleware
     {

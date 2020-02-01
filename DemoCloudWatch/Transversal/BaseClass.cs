@@ -13,7 +13,7 @@
             _logEventInfo = new LogEventInfo(LogLevel.Error, "", "customs values");
         }
 
-        public void RegisterLogFatal(Exception ex) {
+        public void RegisterLogFatal(Exception ex, Guid identifier) {
             var log = new LogEventInfo(LogLevel.Fatal, "", "") {
                 Message = ex.Message,
                 Exception = ex
@@ -26,7 +26,7 @@
             var test5 = test1.Name;
             var test6 = test1.DeclaringType.FullName;
 
-            log.Properties.Add("idlog", Guid.NewGuid().ToString());
+            log.Properties.Add("idlog", identifier.ToString());
             log.Properties.Add("methodName", $"{ex.TargetSite.DeclaringType?.FullName}.{ex.TargetSite.Name}");
 
             //var information = new LogEventInfo(LogLevel.Fatal, "", "") { Message = ex.Message, Exception = ex };

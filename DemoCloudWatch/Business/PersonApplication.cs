@@ -5,22 +5,42 @@
     using System.Collections.Generic;
 
     public class PersonApplication : BaseClass, IPersonApplication {
-        public IEnumerable<string> GetAllPerson()
-        {
+        public Response<IEnumerable<string>> GetAllPerson() {
+            var response = new Response<IEnumerable<string>>();
+            var identifier = Guid.NewGuid();
+
             try {
                 var test = 10;
                 var test1 = 0;
                 var test2 = test / test1;
             } catch (Exception ex) {
-                RegisterLogFatal(ex);
+                RegisterLogFatal(ex, identifier);
+
+                response.IsSuccess = false;
+                response.IsWarning = false;
+                response.Message = $"Ocurrio un error inesperado {identifier}";
             }
 
-            return null;
+            return response;
         }
 
-        public object RegisterPerson(string value)
-        {
-            throw new System.NotImplementedException();
+        public Response<object> RegisterPerson(string value) {
+            var response = new Response<object>();
+            var identifier = Guid.NewGuid();
+
+            try {
+                var test = 10;
+                var test1 = 0;
+                var test2 = test / test1;
+            } catch (Exception ex) {
+                RegisterLogFatal(ex, identifier);
+
+                response.IsSuccess = false;
+                response.IsWarning = false;
+                response.Message = $"Ocurrio un error inesperado {identifier}";
+            }
+
+            return response;
         }
     }
 }

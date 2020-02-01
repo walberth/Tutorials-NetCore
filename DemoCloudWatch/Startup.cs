@@ -28,7 +28,7 @@
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMiddleware<Middleware>();
+            app.UseMiddleware<Middleware.Middleware>();
 
             app.UseMvc();
             ConfigureLogger();
@@ -38,10 +38,9 @@
             var config = new LoggingConfiguration();
 
             var awsTarget = CreateAwsTarget(Configuration["InformationAWS:LogGroup"],
-                Configuration["InformationAWS:Region"],
-                Configuration["InformationAWS:AccessKey"],
-                Configuration["InformationAWS:SecretKey"],
-                Configuration["InformationAWS:Layout"]);
+                                            Configuration["InformationAWS:Region"],
+                                            Configuration["InformationAWS:AccessKey"],
+                                            Configuration["InformationAWS:SecretKey"]);
 
             var fileTarget = CreateFileTarget(Configuration["Logging:File:Path"], Configuration["Logging:File:Layout"]);
 
@@ -58,53 +57,30 @@
             LogManager.Configuration = config;
         }
 
-        private AWSTarget CreateAwsTarget(string logGroup, string region, string accessKey, string secretKey, string layout) {
+        private AWSTarget CreateAwsTarget(string logGroup, string region, string accessKey, string secretKey) {
             var target = new AWSTarget();
             target.Credentials = new Amazon.Runtime.BasicAWSCredentials(accessKey, secretKey);
             target.LogGroup = logGroup;
             target.Region = region;
-            //target.Layout = new JsonLayout();
-
-            //var information = new LogEventInfo();
-            ////information.Properties["IdLog"] = "${event-properties:item=idlog}";
-            //information.Properties["LogTimeStamp"] = "${longdate}";
-            //information.Properties["MachineName"] = "${aspnet-request-ip}";
-            //information.Properties["Level"] = "${level}";
-            //information.Properties["Message"] = "${message}";
-            //information.Properties["Exception"] = "${stacktrace}";
-            //information.Properties["Payload"] = "${when:when='${aspnet-request-method}' == 'GET':inner='${aspnet-request-querystring}':else='${aspnet-request-posted-body}'}";
-            //information.Properties["CallSite"] = "${aspnet-request-url:IncludePort=true:IncludeQueryString=true}";
-            //information.Properties["Action"] = "${aspnet-request-method}";
-            //information.Properties["Username"] = "${aspnet-sessionid}";
-            //information.Properties["MethodName"] = "${aspnet-mvc-action}";
-            //information.Properties["ApplicationName"] = "${event-properties:item=idlog}";
 
             var format = "{ " +
-                             "Id=" + "${event-properties:item=idlog}" + '\'' +
-                             ", LogTimeStamp='" + "${longdate}" + '\'' +
-                             ", MachineName='" + "${aspnet-request-ip}" + '\'' +
-                             ", Level='" + "${level}" + '\'' +
-                             ", Message=" + "${message}" +
-                             ", Exception=" + "${stacktrace}" +
-                             ", Payload='" + "${when:when='${aspnet-request-method}' == 'GET':inner='${aspnet-request-querystring}':else='${aspnet-request-posted-body}'}" + '\'' +
-                             ", CallSite='" + "${aspnet-request-url:IncludePort=true:IncludeQueryString=true}" + '\'' +
-                             ", Action='" + "${aspnet-request-method}" + '\'' +
-                             ", Username='" + "${aspnet-sessionid}" + '\'' +
-                             ", MethodName='" + "${event-properties:item=methodName}" + '\'' +
-                             ", ApplicationName=" + "Test" +
-                         " }";
+                                 "Id=" + "${event-properties:item=idlog}" + '\'' +
+                                 ", LogTimeStamp='" + "${longdate}" + '\'' +
+                                 ", MachineName='" + "${aspnet-request-ip}" + '\'' +
+                                 ", Level='" + "${level}" + '\'' +
+                                 ", Message=" + "${message}" +
+                                 ", Exception=" + "${stacktrace}" +
+                                 ", Payload='" + "${when:when='${aspnet-request-method}' == 'GET':inner='${aspnet-request-querystring}':else='${aspnet-request-posted-body}'}" + '\'' +
+                                 ", CallSite='" + "${aspnet-request-url:IncludePort=true:IncludeQueryString=true}" + '\'' +
+                                 ", Action='" + "${aspnet-request-method}" + '\'' +
+                                 ", Username='" + "${aspnet-sessionid}" + '\'' +
+                                 ", MethodName='" + "${event-properties:item=methodName}" + '\'' +
+                                 ", ApplicationName=" + "Test" +
+                             " }";
 
-            //target.Layout.Precalculate(information);
             target.LogStreamNameSuffix = "hola";
             target.LogStreamNamePrefix = "again";
             target.Layout = format;
-
-            //return new AWSTarget {
-            //    LogGroup = logGroup,
-            //    Region = region,
-            //    Credentials = new Amazon.Runtime.BasicAWSCredentials(accessKey, secretKey),
-            //    Layout = layout
-            //};
 
             return target;
         }
