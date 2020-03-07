@@ -30,6 +30,7 @@ namespace EFCore_Demo
             services.AddControllers();
             services.AddDbContext<EFCoreContext>(x => x.UseLoggerFactory(_loggerFactory)
                     .UseMySql(Configuration["Database"]));
+            services.AddSwaggerDocumentation();
             services.ConfigureServiceCollection();
         }
 
@@ -40,6 +41,7 @@ namespace EFCore_Demo
 
             app.UseRouting();
             app.UseMiddleware<ExceptionMiddleware>();
+            app.UseSwaggerDocumentation();
             app.UseEndpoints(endpoints =>
                              {
                                  endpoints.MapControllers();
