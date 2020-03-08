@@ -14,7 +14,7 @@
         [Column("department_id")]
         public int IdDepartment { get; set; }
         [Column("direction")]
-        public string DirectionValue { get; set; } // TODO
+        public string DirectionValue { get; set; }
 
         public virtual Person Person { get; set; }
         public virtual Department Department { get; set; }
