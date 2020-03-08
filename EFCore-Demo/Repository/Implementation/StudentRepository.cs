@@ -16,7 +16,7 @@
         }
 
         public async Task<IEnumerable<Student>> GetAll() {
-            throw new Exception("Ooops!");
+            //throw new Exception("Ooops!");
             return await _context.Student
                                  .Include(x => x.ReferenceType)
                                  .Include(x => x.Person)
