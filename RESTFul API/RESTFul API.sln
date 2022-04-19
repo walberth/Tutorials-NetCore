@@ -1,0 +1,180 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Getting Resources", "2.Getting Resources", "{97D1915B-948A-49F4-A98E-0B09A6CA0460}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Getting Resources\Library.API\Library.API.csproj", "{0824CB00-41E7-4D72-B6D7-18E8F0F42C74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{F93ECAF6-61E2-4700-807B-313AE7AB3C74}"
+	ProjectSection(SolutionItems) = preProject
+		Getting Resources\Getting Resources.json = Getting Resources\Getting Resources.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Creating and Deleting Resources", "3.Creating and Deleting Resources", "{0B443602-54E9-4BC8-9F2E-CF0CCB0647AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Creating and Deleting Resources\Library.API\Library.API.csproj", "{913B2EEB-AFF4-4AA7-B66A-08B21D672A64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{4829FE3F-9F87-4950-9C85-AF2B4395C56B}"
+	ProjectSection(SolutionItems) = preProject
+		Creating and Deleting Resources\Creating and Deleting Resources.json = Creating and Deleting Resources\Creating and Deleting Resources.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Updating Resources", "4.Updating Resources", "{807353F6-A4F2-490D-879D-2E34C3B90A32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Updating Resources\Library.API\Library.API.csproj", "{BA2BA803-A1FF-4554-B457-ACAC6F237F46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{34EF9F41-BDAD-4DE8-972D-CB5B36ACAF7E}"
+	ProjectSection(SolutionItems) = preProject
+		Updating Resources\Updating Resources.json = Updating Resources\Updating Resources.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Working with Validation and Logging", "5.Working with Validation and Logging", "{83692362-E80A-4D96-84F7-75403D6BAAB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Working with Validation and Logging\Library.API\Library.API.csproj", "{3803BE28-5C21-4EDF-AF94-4F51A65A2A1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{F583A4D3-275A-4CBF-9D02-24EAF15410EE}"
+	ProjectSection(SolutionItems) = preProject
+		Working with Validation and Logging\Working with Validation and Logging.json = Working with Validation and Logging\Working with Validation and Logging.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Implementing Paging, Filtering, and Searching", "6.Implementing Paging, Filtering, and Searching", "{862B39FD-7406-4203-B5A1-F4B1C448A3C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{087169AC-03F8-4BA0-8830-31A5988246B5}"
+	ProjectSection(SolutionItems) = preProject
+		Implementing Paging, Filtering, and Searching\Implementing Paging, Filtering, and Searching.json = Implementing Paging, Filtering, and Searching\Implementing Paging, Filtering, and Searching.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Implementing Paging, Filtering, and Searching\Library.API\Library.API.csproj", "{A219738C-CEDA-42E3-8543-B84FD0CE3D4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7.Implementing Sorting and Data Shaping", "7.Implementing Sorting and Data Shaping", "{613106B4-4E6F-4E4D-8C59-7C5BD979D168}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{9DB51269-B313-409C-A6AE-4F9D7845B126}"
+	ProjectSection(SolutionItems) = preProject
+		Implementing Sorting and Data Shaping\Implementing Sorting and Data Shaping.json = Implementing Sorting and Data Shaping\Implementing Sorting and Data Shaping.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Implementing Sorting and Data Shaping\Library.API\Library.API.csproj", "{A0A9A8D5-10E4-4A1D-A244-495CD84B2A0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8.Getting Started with HATEOAS", "8.Getting Started with HATEOAS", "{3138FB6D-7F60-45F4-B275-18C4DEE637AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{94101F0F-186B-4ACF-9E60-7B799AF632CC}"
+	ProjectSection(SolutionItems) = preProject
+		Getting Started with HATEOAS\Getting Started with HATEOAS.json = Getting Started with HATEOAS\Getting Started with HATEOAS.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Getting Started with HATEOAS\Library.API\Library.API.csproj", "{AF61C063-0EFD-4ADC-A094-2254DD628659}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9.Advanced HATEOAS, Media Types, and Versioning", "9.Advanced HATEOAS, Media Types, and Versioning", "{6ABB679D-EC53-4EE2-A1FF-B51074A52951}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{95278C5A-CF23-4E65-8286-D2617D79CC06}"
+	ProjectSection(SolutionItems) = preProject
+		Advanced HATEOAS, Media Types, and Versioning\Advanced HATEOAS, Media Types, and Versioning.json = Advanced HATEOAS, Media Types, and Versioning\Advanced HATEOAS, Media Types, and Versioning.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Advanced HATEOAS, Media Types, and Versioning\Library.API\Library.API.csproj", "{E0559855-7BE1-4F90-820F-0953EA5033BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.Working with Caching and Concurrency", "10.Working with Caching and Concurrency", "{C9355330-2031-4A64-BCFA-9F63FAC60FBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{BF5824A7-7DDB-4A48-A150-4602232FE744}"
+	ProjectSection(SolutionItems) = preProject
+		Working with Caching and Concurrency\Working with Caching and Concurrency.json = Working with Caching and Concurrency\Working with Caching and Concurrency.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Working with Caching and Concurrency\Library.API\Library.API.csproj", "{29054760-72BA-4B54-9BC4-AE534F77D9A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11.Protecting, Testing, and Documenting Our API", "11.Protecting, Testing, and Documenting Our API", "{818B950C-A394-4338-B2CF-47C2CEB1226E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{8A7F3866-D93E-45B1-8D59-589C9803E585}"
+	ProjectSection(SolutionItems) = preProject
+		Protecting, Testing, and Documenting Our API\Protecting, Testing, and Documenting Our API.json = Protecting, Testing, and Documenting Our API\Protecting, Testing, and Documenting Our API.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Protecting, Testing, and Documenting Our API\Library.API\Library.API.csproj", "{5E083DA9-3AA7-4F1C-9213-8E048BB846C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Introducing REST", "1.Introducing REST", "{8D736AEF-DFA5-4FCE-80BB-0EFD811CB0FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Introducing REST\Library.API\Library.API.csproj", "{8DA5AD2E-8C66-4013-9DE0-039994C8AE6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0824CB00-41E7-4D72-B6D7-18E8F0F42C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0824CB00-41E7-4D72-B6D7-18E8F0F42C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0824CB00-41E7-4D72-B6D7-18E8F0F42C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0824CB00-41E7-4D72-B6D7-18E8F0F42C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913B2EEB-AFF4-4AA7-B66A-08B21D672A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913B2EEB-AFF4-4AA7-B66A-08B21D672A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913B2EEB-AFF4-4AA7-B66A-08B21D672A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913B2EEB-AFF4-4AA7-B66A-08B21D672A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2BA803-A1FF-4554-B457-ACAC6F237F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2BA803-A1FF-4554-B457-ACAC6F237F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2BA803-A1FF-4554-B457-ACAC6F237F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2BA803-A1FF-4554-B457-ACAC6F237F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3803BE28-5C21-4EDF-AF94-4F51A65A2A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3803BE28-5C21-4EDF-AF94-4F51A65A2A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3803BE28-5C21-4EDF-AF94-4F51A65A2A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3803BE28-5C21-4EDF-AF94-4F51A65A2A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A219738C-CEDA-42E3-8543-B84FD0CE3D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A219738C-CEDA-42E3-8543-B84FD0CE3D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A219738C-CEDA-42E3-8543-B84FD0CE3D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A219738C-CEDA-42E3-8543-B84FD0CE3D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A9A8D5-10E4-4A1D-A244-495CD84B2A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A9A8D5-10E4-4A1D-A244-495CD84B2A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A9A8D5-10E4-4A1D-A244-495CD84B2A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A9A8D5-10E4-4A1D-A244-495CD84B2A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF61C063-0EFD-4ADC-A094-2254DD628659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF61C063-0EFD-4ADC-A094-2254DD628659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF61C063-0EFD-4ADC-A094-2254DD628659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF61C063-0EFD-4ADC-A094-2254DD628659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0559855-7BE1-4F90-820F-0953EA5033BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0559855-7BE1-4F90-820F-0953EA5033BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0559855-7BE1-4F90-820F-0953EA5033BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0559855-7BE1-4F90-820F-0953EA5033BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29054760-72BA-4B54-9BC4-AE534F77D9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29054760-72BA-4B54-9BC4-AE534F77D9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29054760-72BA-4B54-9BC4-AE534F77D9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29054760-72BA-4B54-9BC4-AE534F77D9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E083DA9-3AA7-4F1C-9213-8E048BB846C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E083DA9-3AA7-4F1C-9213-8E048BB846C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E083DA9-3AA7-4F1C-9213-8E048BB846C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E083DA9-3AA7-4F1C-9213-8E048BB846C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA5AD2E-8C66-4013-9DE0-039994C8AE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA5AD2E-8C66-4013-9DE0-039994C8AE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA5AD2E-8C66-4013-9DE0-039994C8AE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA5AD2E-8C66-4013-9DE0-039994C8AE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0824CB00-41E7-4D72-B6D7-18E8F0F42C74} = {97D1915B-948A-49F4-A98E-0B09A6CA0460}
+		{F93ECAF6-61E2-4700-807B-313AE7AB3C74} = {97D1915B-948A-49F4-A98E-0B09A6CA0460}
+		{913B2EEB-AFF4-4AA7-B66A-08B21D672A64} = {0B443602-54E9-4BC8-9F2E-CF0CCB0647AF}
+		{4829FE3F-9F87-4950-9C85-AF2B4395C56B} = {0B443602-54E9-4BC8-9F2E-CF0CCB0647AF}
+		{BA2BA803-A1FF-4554-B457-ACAC6F237F46} = {807353F6-A4F2-490D-879D-2E34C3B90A32}
+		{34EF9F41-BDAD-4DE8-972D-CB5B36ACAF7E} = {807353F6-A4F2-490D-879D-2E34C3B90A32}
+		{3803BE28-5C21-4EDF-AF94-4F51A65A2A1E} = {83692362-E80A-4D96-84F7-75403D6BAAB2}
+		{F583A4D3-275A-4CBF-9D02-24EAF15410EE} = {83692362-E80A-4D96-84F7-75403D6BAAB2}
+		{087169AC-03F8-4BA0-8830-31A5988246B5} = {862B39FD-7406-4203-B5A1-F4B1C448A3C3}
+		{A219738C-CEDA-42E3-8543-B84FD0CE3D4C} = {862B39FD-7406-4203-B5A1-F4B1C448A3C3}
+		{9DB51269-B313-409C-A6AE-4F9D7845B126} = {613106B4-4E6F-4E4D-8C59-7C5BD979D168}
+		{A0A9A8D5-10E4-4A1D-A244-495CD84B2A0E} = {613106B4-4E6F-4E4D-8C59-7C5BD979D168}
+		{94101F0F-186B-4ACF-9E60-7B799AF632CC} = {3138FB6D-7F60-45F4-B275-18C4DEE637AE}
+		{AF61C063-0EFD-4ADC-A094-2254DD628659} = {3138FB6D-7F60-45F4-B275-18C4DEE637AE}
+		{95278C5A-CF23-4E65-8286-D2617D79CC06} = {6ABB679D-EC53-4EE2-A1FF-B51074A52951}
+		{E0559855-7BE1-4F90-820F-0953EA5033BC} = {6ABB679D-EC53-4EE2-A1FF-B51074A52951}
+		{BF5824A7-7DDB-4A48-A150-4602232FE744} = {C9355330-2031-4A64-BCFA-9F63FAC60FBA}
+		{29054760-72BA-4B54-9BC4-AE534F77D9A2} = {C9355330-2031-4A64-BCFA-9F63FAC60FBA}
+		{8A7F3866-D93E-45B1-8D59-589C9803E585} = {818B950C-A394-4338-B2CF-47C2CEB1226E}
+		{5E083DA9-3AA7-4F1C-9213-8E048BB846C9} = {818B950C-A394-4338-B2CF-47C2CEB1226E}
+		{8DA5AD2E-8C66-4013-9DE0-039994C8AE6D} = {8D736AEF-DFA5-4FCE-80BB-0EFD811CB0FA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BCB840A-0F05-4319-9BDD-496F68808CAA}
+	EndGlobalSection
+EndGlobal

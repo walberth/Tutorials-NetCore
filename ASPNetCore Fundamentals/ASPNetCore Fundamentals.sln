@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.First ASP.NET Core Application", "1.First ASP.NET Core Application", "{DC248F12-F9ED-4BF2-BAC3-278E385B450C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Startup and Middleware", "2.Startup and Middleware", "{14888435-5C8F-480C-97E4-2BD138F9952F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Controllers in the MVC Framework", "3.Controllers in the MVC Framework", "{4F817810-7032-4A21-BFAF-A6F5CDE0A793}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Models in the MVC Framework", "4.Models in the MVC Framework", "{751400DC-6EEA-43ED-81AB-1D29EADFE74A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Using the Entity Framework", "5.Using the Entity Framework", "{06E893C7-2A41-43E1-A2FE-D2632CBE0EB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Razor Views", "6.Razor Views", "{1547BB1F-105B-48EE-9DD6-20226E4B0779}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7.Aspnet Identity", "7.Aspnet Identity", "{4985FA7A-B7E2-4E15-B93A-9B6A438AE34F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8.Front end Frameworks and Tools", "8.Front end Frameworks and Tools", "{EE6DFD44-F838-41E7-A9FF-FE8C954C624C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "First ASP.NET Core Application\OdeToFood\OdeToFood.csproj", "{0103138F-36DC-4182-BE32-742194CD7508}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "Startup and Middleware\OdeToFood\OdeToFood\OdeToFood.csproj", "{8FBB90BD-3A84-4401-AF89-FA5D8514634B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "Controllers in the MVC Framework\OdeToFood\OdeToFood.csproj", "{627A5062-D9DF-4124-BF2C-2EB9CA30559B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "Models in the MVC Framework\OdeToFood\OdeToFood.csproj", "{F4B9FC66-3F8A-45DB-9CA0-03A1A2F55D5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "Using the Entity Framework\OdeToFood\OdeToFood.csproj", "{FED13384-1C02-4CF5-95BB-95B858D53E56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "Aspnet Identity\OdeToFood\OdeToFood.csproj", "{3EE44C38-F47D-4453-A6F2-252DF2F33773}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "Front end Frameworks and Tools\OdeToFood\OdeToFood.csproj", "{481C9772-1D61-45A8-B762-49DB4C4448CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "Razor Views\OdeToFood\src\OdeToFood\OdeToFood.csproj", "{3F069195-191C-4FC3-B9FD-5C5DC54FDFD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0103138F-36DC-4182-BE32-742194CD7508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0103138F-36DC-4182-BE32-742194CD7508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0103138F-36DC-4182-BE32-742194CD7508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0103138F-36DC-4182-BE32-742194CD7508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBB90BD-3A84-4401-AF89-FA5D8514634B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBB90BD-3A84-4401-AF89-FA5D8514634B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBB90BD-3A84-4401-AF89-FA5D8514634B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBB90BD-3A84-4401-AF89-FA5D8514634B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627A5062-D9DF-4124-BF2C-2EB9CA30559B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627A5062-D9DF-4124-BF2C-2EB9CA30559B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627A5062-D9DF-4124-BF2C-2EB9CA30559B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627A5062-D9DF-4124-BF2C-2EB9CA30559B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B9FC66-3F8A-45DB-9CA0-03A1A2F55D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B9FC66-3F8A-45DB-9CA0-03A1A2F55D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B9FC66-3F8A-45DB-9CA0-03A1A2F55D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B9FC66-3F8A-45DB-9CA0-03A1A2F55D5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED13384-1C02-4CF5-95BB-95B858D53E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED13384-1C02-4CF5-95BB-95B858D53E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED13384-1C02-4CF5-95BB-95B858D53E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED13384-1C02-4CF5-95BB-95B858D53E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE44C38-F47D-4453-A6F2-252DF2F33773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE44C38-F47D-4453-A6F2-252DF2F33773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE44C38-F47D-4453-A6F2-252DF2F33773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE44C38-F47D-4453-A6F2-252DF2F33773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481C9772-1D61-45A8-B762-49DB4C4448CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481C9772-1D61-45A8-B762-49DB4C4448CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481C9772-1D61-45A8-B762-49DB4C4448CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481C9772-1D61-45A8-B762-49DB4C4448CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F069195-191C-4FC3-B9FD-5C5DC54FDFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F069195-191C-4FC3-B9FD-5C5DC54FDFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F069195-191C-4FC3-B9FD-5C5DC54FDFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F069195-191C-4FC3-B9FD-5C5DC54FDFD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0103138F-36DC-4182-BE32-742194CD7508} = {DC248F12-F9ED-4BF2-BAC3-278E385B450C}
+		{8FBB90BD-3A84-4401-AF89-FA5D8514634B} = {14888435-5C8F-480C-97E4-2BD138F9952F}
+		{627A5062-D9DF-4124-BF2C-2EB9CA30559B} = {4F817810-7032-4A21-BFAF-A6F5CDE0A793}
+		{F4B9FC66-3F8A-45DB-9CA0-03A1A2F55D5F} = {751400DC-6EEA-43ED-81AB-1D29EADFE74A}
+		{FED13384-1C02-4CF5-95BB-95B858D53E56} = {06E893C7-2A41-43E1-A2FE-D2632CBE0EB4}
+		{3EE44C38-F47D-4453-A6F2-252DF2F33773} = {4985FA7A-B7E2-4E15-B93A-9B6A438AE34F}
+		{481C9772-1D61-45A8-B762-49DB4C4448CA} = {EE6DFD44-F838-41E7-A9FF-FE8C954C624C}
+		{3F069195-191C-4FC3-B9FD-5C5DC54FDFD8} = {1547BB1F-105B-48EE-9DD6-20226E4B0779}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC5624AB-785D-4F57-9A05-6CC1AB6A9DCE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Acquainted with ASP.NET Core", "1.Acquainted with ASP.NET Core", "{275CAB5B-71E2-459E-A659-FB4F1AC4C580}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityInfo.API", "Acquainted with ASP.NET Core\CityInfo.API\CityInfo.API.csproj", "{FE583D3D-E790-442F-ADAE-FBE6872F12C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Creating the API and Returning Resources", "2.Creating the API and Returning Resources", "{36EC8749-FBB2-45C9-A809-A4853710E1E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityInfo.API", "Creating the API and Returning Resources\CityInfo.API\CityInfo.API.csproj", "{8EDFCFFF-A538-4C23-922D-14734FB5051A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Manipulating Resources", "3.Manipulating Resources", "{F7D11E94-76C2-4F04-9674-80C9A02A4529}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityInfo.API", "Manipulating Resources\CityInfo.API\CityInfo.API.csproj", "{5F8D087E-997E-48DD-BE10-544C4A382B09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Services and Dependency Injection", "4.Services and Dependency Injection", "{9E9B4DDC-401A-4D0F-A1A0-5B3E4648EFB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityInfo.API", "Services and Dependency Injection\CityInfo.API\CityInfo.API.csproj", "{1144752E-F515-45F8-9817-F2C601CCF709}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Entity Framework Core", "5.Entity Framework Core", "{38F5B771-DB83-4E26-9943-A83A55E5EBF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityInfo.API", "Entity Framework Core\CityInfo.API\CityInfo.API.csproj", "{C1202F5B-3117-4FFB-B4A1-D54D0BF1B772}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Entity Framework Core in Our Controllers", "6.Entity Framework Core in Our Controllers", "{62F17BA8-9BA6-4930-AED5-4BF2A437CC8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityInfo.API", "Entity Framework Core in Our Controllers\CityInfo.API\CityInfo.API.csproj", "{EFA51771-468B-46ED-9E01-8FFE4180E2BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{F150C99F-5A1C-4C38-BA9E-3FAD4380AF7F}"
+	ProjectSection(SolutionItems) = preProject
+		Creating the API and Returning Resources\CityInfo.API\Postman\Creating the API and Returning Resources.json = Creating the API and Returning Resources\CityInfo.API\Postman\Creating the API and Returning Resources.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{14BF54AA-EE21-4E73-B59F-63D194985947}"
+	ProjectSection(SolutionItems) = preProject
+		Manipulating Resources\CityInfo.API\Postman\Manipulating Resources.json = Manipulating Resources\CityInfo.API\Postman\Manipulating Resources.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{C2F44F21-4AF2-4385-BA6A-C38C15B5BD19}"
+	ProjectSection(SolutionItems) = preProject
+		Services and Dependency Injection\CityInfo.API\Postman\Services and Dependency Injection.json = Services and Dependency Injection\CityInfo.API\Postman\Services and Dependency Injection.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{1B53C16F-7383-46A2-9684-AC63FE90825F}"
+	ProjectSection(SolutionItems) = preProject
+		Entity Framework Core\CityInfo.API\Postman\Entity Framework Core.json = Entity Framework Core\CityInfo.API\Postman\Entity Framework Core.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{8AB7C180-DA89-4CF3-A4AF-532AFAE9CB08}"
+	ProjectSection(SolutionItems) = preProject
+		Entity Framework Core in Our Controllers\CityInfo.API\Postman\Entity Framework Core in Our Controllers.json = Entity Framework Core in Our Controllers\CityInfo.API\Postman\Entity Framework Core in Our Controllers.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE583D3D-E790-442F-ADAE-FBE6872F12C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE583D3D-E790-442F-ADAE-FBE6872F12C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE583D3D-E790-442F-ADAE-FBE6872F12C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE583D3D-E790-442F-ADAE-FBE6872F12C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDFCFFF-A538-4C23-922D-14734FB5051A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDFCFFF-A538-4C23-922D-14734FB5051A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDFCFFF-A538-4C23-922D-14734FB5051A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDFCFFF-A538-4C23-922D-14734FB5051A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8D087E-997E-48DD-BE10-544C4A382B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8D087E-997E-48DD-BE10-544C4A382B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8D087E-997E-48DD-BE10-544C4A382B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8D087E-997E-48DD-BE10-544C4A382B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1144752E-F515-45F8-9817-F2C601CCF709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1144752E-F515-45F8-9817-F2C601CCF709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1144752E-F515-45F8-9817-F2C601CCF709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1144752E-F515-45F8-9817-F2C601CCF709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1202F5B-3117-4FFB-B4A1-D54D0BF1B772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1202F5B-3117-4FFB-B4A1-D54D0BF1B772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1202F5B-3117-4FFB-B4A1-D54D0BF1B772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1202F5B-3117-4FFB-B4A1-D54D0BF1B772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA51771-468B-46ED-9E01-8FFE4180E2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA51771-468B-46ED-9E01-8FFE4180E2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA51771-468B-46ED-9E01-8FFE4180E2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA51771-468B-46ED-9E01-8FFE4180E2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE583D3D-E790-442F-ADAE-FBE6872F12C3} = {275CAB5B-71E2-459E-A659-FB4F1AC4C580}
+		{8EDFCFFF-A538-4C23-922D-14734FB5051A} = {36EC8749-FBB2-45C9-A809-A4853710E1E9}
+		{5F8D087E-997E-48DD-BE10-544C4A382B09} = {F7D11E94-76C2-4F04-9674-80C9A02A4529}
+		{1144752E-F515-45F8-9817-F2C601CCF709} = {9E9B4DDC-401A-4D0F-A1A0-5B3E4648EFB6}
+		{C1202F5B-3117-4FFB-B4A1-D54D0BF1B772} = {38F5B771-DB83-4E26-9943-A83A55E5EBF3}
+		{EFA51771-468B-46ED-9E01-8FFE4180E2BA} = {62F17BA8-9BA6-4930-AED5-4BF2A437CC8F}
+		{F150C99F-5A1C-4C38-BA9E-3FAD4380AF7F} = {36EC8749-FBB2-45C9-A809-A4853710E1E9}
+		{14BF54AA-EE21-4E73-B59F-63D194985947} = {F7D11E94-76C2-4F04-9674-80C9A02A4529}
+		{C2F44F21-4AF2-4385-BA6A-C38C15B5BD19} = {9E9B4DDC-401A-4D0F-A1A0-5B3E4648EFB6}
+		{1B53C16F-7383-46A2-9684-AC63FE90825F} = {38F5B771-DB83-4E26-9943-A83A55E5EBF3}
+		{8AB7C180-DA89-4CF3-A4AF-532AFAE9CB08} = {62F17BA8-9BA6-4930-AED5-4BF2A437CC8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98DD30AE-49DD-4231-817A-E65F8BB920E5}
+	EndGlobalSection
+EndGlobal

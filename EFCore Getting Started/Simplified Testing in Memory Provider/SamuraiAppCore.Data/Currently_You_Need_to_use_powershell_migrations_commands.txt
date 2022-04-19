@@ -1,0 +1,2 @@
+﻿ef docs as of 1/1/2017:
+The .NET Core CLI commands (dotnet ef) do not currently work with the .NET Core Tools MSBuild Alpha.

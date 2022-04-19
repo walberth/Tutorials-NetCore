@@ -1,0 +1,32 @@
+{
+  "namespace": "com.pluralsight.reactive.model.domain",
+  "type": "record",
+  "name": "SubmissionAcceptedEvent",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "The event id."
+    },
+    {
+      "name": "principal",
+      "type": "string",
+      "description": "The principal's name."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The document name that was submitted."
+    },
+    {
+      "name": "eTag",
+      "type": "string",
+      "description": "The document reference."
+    },
+    {
+      "name": "createdAt",
+      "type": "long",
+      "description": "The time of the submission."
+    }
+  ]
+}

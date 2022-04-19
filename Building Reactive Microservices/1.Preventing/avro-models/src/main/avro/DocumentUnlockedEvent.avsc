@@ -1,0 +1,50 @@
+{
+  "namespace": "com.pluralsight.reactive.model.domain",
+  "type": "record",
+  "name": "DocumentUnlockedEvent",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "The event id."
+    },
+    {
+      "name": "principal",
+      "type": "string",
+      "description": "The principal's name."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The document name that was submitted."
+    },
+    {
+      "name": "eTag",
+      "type": "string",
+      "description": "The document reference."
+    },
+    {
+      "name": "createdAt",
+      "type": "long",
+      "description": "The time of the cancellation."
+    },
+    {
+      "name": "errorCode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "description": "The error code, if an error occurred."
+    },
+    {
+      "name": "errorMessage",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "description": "The error message, if an error occurred."
+    }
+  ]
+}

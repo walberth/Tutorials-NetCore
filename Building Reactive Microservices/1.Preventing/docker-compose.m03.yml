@@ -1,0 +1,36 @@
+# Starting docker compose for module 3
+#
+# docker-compose -f docker-compose.m03.yml up translation-service document-service
+
+version: '3'
+services:
+  document-service:
+    image: com.pluralsight.reactive/document-service:latest
+    depends_on:
+      - zookeeper
+      - broker
+      - schema-registry
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_PROFILES_ACTIVE: m03
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: "250M"
+  translation-service:
+    image: com.pluralsight.reactive/translation-service:latest
+    depends_on:
+      - zookeeper
+      - broker
+      - schema-registry
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_PROFILES_ACTIVE: m03
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: "250M"

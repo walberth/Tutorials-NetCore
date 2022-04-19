@@ -1,0 +1,76 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: development
+      changes:
+        - createTable:
+            tableName: document
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_document
+                    nullable: false
+              - column:
+                  name: principal
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: e_tag
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: content
+                  type: blob
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+        - addUniqueConstraint:
+            columnNames: principal, name, e_tag
+            constraintName: uk_document_principal_name_e_tag
+            tableName: document
+            validate: true
+        - createTable:
+            tableName: lock
+            columns:
+              - column:
+                  name: sid
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_lock
+                    nullable: false
+              - column:
+                  name: principal
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: e_tag
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

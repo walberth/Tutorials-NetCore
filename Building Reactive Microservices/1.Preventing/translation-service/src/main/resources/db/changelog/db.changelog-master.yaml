@@ -1,0 +1,197 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: development
+      changes:
+        - createTable:
+            tableName: submission
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_submission
+                    nullable: false
+              - column:
+                  name: sid
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: principal
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: e_tag
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: source
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: target
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: completion_date
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: details
+                  type: text
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: active
+                  type: boolean
+        - addUniqueConstraint:
+            columnNames: sid, active
+            constraintName: uk_submission_sid_active
+            tableName: submission
+            validate: true
+        - createTable:
+            tableName: translator
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_translator
+                    nullable: false
+              - column:
+                  name: principal
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: source
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: target
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+        - addUniqueConstraint:
+            columnNames: principal, source, target
+            constraintName: uk_translator_principal_source_target
+            tableName: translator
+            validate: true
+        - createTable:
+            tableName: assignment
+            columns:
+              - column:
+                  name: sid
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_assignment
+                    nullable: false
+              - column:
+                  name: principal
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: missing_notification_poll
+            columns:
+              - column:
+                  name: start
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_missing_notification_poll
+                    nullable: false
+              - column:
+                  name: end
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_missing_notification_poll
+                    nullable: false
+              - column:
+                  name: worker
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: after
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: lease
+                  type: timestamp
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: rejected_translation_poll
+            columns:
+              - column:
+                  name: start
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_rejected_translation_poll
+                    nullable: false
+              - column:
+                  name: end
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_rejected_translation_poll
+                    nullable: false
+              - column:
+                  name: worker
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: after
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: lease
+                  type: timestamp
+                  constraints:
+                    nullable: false

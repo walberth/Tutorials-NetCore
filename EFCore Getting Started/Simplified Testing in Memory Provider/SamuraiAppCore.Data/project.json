@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0-*",
+
+    "dependencies": {
+        "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+        "NETStandard.Library": "1.6.1"
+    },
+
+    "frameworks": {
+        "netstandard1.6": {
+            "imports": "dnxcore50"
+        }
+    },
+    "tools": {
+        "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4"
+    }
+
+}
